@@ -1,0 +1,48 @@
+.banner-container {
+  padding: 70px 350px;
+  background-color: $secondary-color;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .header {
+    font-size: $xl-font-size;
+    font-weight: 600;
+    padding-block-end: 2px ;
+    border-bottom: 2px solid white;
+  }
+  .content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 100%;
+
+    svg {
+      width: 200px;
+      height: auto;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: fit-content;
+      margin-block-start: 3%;
+      
+      .title {
+        background-color: $dark-blue;
+        padding: 2% 4%;
+        border-radius: 5px;
+        font-weight: 600;
+        margin-block-start: 3%;
+      }
+
+      .description {
+        text-align: center;
+        margin-block-start: 3%;
+      }
+    }
+  }
+}
