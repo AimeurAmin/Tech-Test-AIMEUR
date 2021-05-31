@@ -5,12 +5,13 @@
   padding: 0;
 }
 
-.first-card-container {
-  width: 400 / 16 * $default-size-unit;
+.card-container {
+  width: 25vw;
   height: fit-content;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 10px 15px grey;
+  margin-bottom: 50px;
 
   img {
     width: 100%;
@@ -21,17 +22,18 @@
     align-items: center;
     justify-content: space-around;
     background-color: $secondary-color;
+    padding: 20px 10px 0 10px;
 
     .logo {
-      width: 150px;
+      width: 30%;
     }
 
-    .network-logo {
-      width: 60px;
+    .heart-logo {
+      width: 20%;
     }
 
     .family-logo {
-      width: 150px;
+      width: 20%;
     }
   }
   .middle-container {
@@ -65,6 +67,41 @@
       div {
         font-size: $m-font-size;
         padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .card-container {
+    width: 40vw;
+    
+    .bottom-container {
+      height: 200px;
+
+      .content-container {
+        div {
+          font-size: $xs-font-size;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    width: 90vw;
+    .bottom-container {
+      height: 200px;
+
+      .content-container {
+        div {
+          font-size: $s-font-size;
+          padding-bottom: 20px;
+        }
       }
     }
   }

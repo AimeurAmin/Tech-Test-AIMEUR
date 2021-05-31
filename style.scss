@@ -1,7 +1,108 @@
-@import "fonts";
+@import "globals";
 @import "card-style-one";
+@import "navbar";
+@import "banner";
 
-// hexagon shape
-svg {
-  width: 10%;
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  padding-block-start: 2vw;
+  padding-block-end: 2vw;
+  .registration-container {
+    width: 50%;
+
+    .title {
+      color: $dark-blue;
+      font-size: $xl-font-size;
+      font-weight: 600;
+      padding-inline-start: 20px;
+      border-left: 4px solid #fac203;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        ". ."
+        ". .";
+      margin-block-start: 30px;
+      .form-element {
+
+        span {
+          color: red;
+          font-size: $xs-font-size;
+          display: none;
+        }
+
+        #wrong-phone {
+          color: red;
+          font-size: $xs-font-size;
+          display: none;
+        }
+
+        label {
+          font-size: $s-font-size;
+        }
+  
+        input {
+          width: 90%;
+          height: 40px;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    button {
+      border: none;
+      background-color: $light-blue;
+      width: 100%;
+      color: white;
+      font-size: $m-font-size;
+      font-weight: 600;
+      border-radius: 5px;
+      padding-block-start: 20px;
+      padding-block-end: 20px;
+      margin-block-start: 20px;
+    }
+
+    #thanks-msg {
+      display: none;
+      text-align: center;
+      padding-block-start: 20px;
+      padding-block-end: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    .registration-container {
+      width: 80%;
+      .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "."
+          "."
+          "."
+          ".";
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
