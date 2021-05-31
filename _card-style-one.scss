@@ -6,7 +6,7 @@
 }
 
 .first-card-container {
-  width: 500 / 16 * $default-size-unit;
+  width: 400 / 16 * $default-size-unit;
   height: fit-content;
   border-radius: 10px;
   overflow: hidden;
@@ -38,7 +38,7 @@
     background-color: $secondary-color;
     border-top: 3 / 16 * $default-size-unit solid $light-grey;
     color: white;
-    font-size: $xl-font-size;
+    font-size: $l-font-size;
     font-weight: 500;
     text-align: center;
     padding: 10px;
@@ -53,19 +53,19 @@
     }
   }
   .bottom-container {
-    height: 300px;
+    height: 250px;
     background-color: $light-grey;
     display: flex;
     align-items: center;
     justify-content: center;
+
     .content-container {
       width: fit-content;
 
       div {
         font-size: $m-font-size;
-        padding-bottom: 20px ;
+        padding-bottom: 20px;
       }
     }
-
   }
 }
