@@ -58,7 +58,7 @@ function verifyPhone(phone) {
 function verifyEmail(email) {
 
   var emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  alert(email.value);
+
   if(!email.value.match(emailRegEx)){
     // if not valid show warning
     email.style.borderColor = 'red';
