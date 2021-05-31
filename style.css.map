@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,oGAAI;AAEZ,WAAW;ADIX,AAAA,GAAG,CAAC;EACF,KAAK,EAAE,GAAG;CACX",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "_fonts.scss"
     ],
     "names": [],
     "file": "style.css"
